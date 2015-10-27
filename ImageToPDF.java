@@ -35,7 +35,7 @@ public class ImageToPDF {
 	      FileOutputStream fos = new FileOutputStream(output);
 	      PdfWriter writer = PdfWriter.getInstance(document, fos);
 	      writer.open();
-	      document.open();
+	      document.open2();
 	      document.add(Image.getInstance(input));
 	      document.close();
 	      writer.close();
